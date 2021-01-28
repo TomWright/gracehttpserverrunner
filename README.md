@@ -30,7 +30,7 @@ func main() {
 	}
 
 	// Create and configure the HTTP server runner.
-	runner := gracehttpserverrunner.HTTPServerRunner{
+	runner := &gracehttpserverrunner.HTTPServerRunner{
 		Server:  server,
 		ShutdownTimeout: time.Second * 5,
 	}
